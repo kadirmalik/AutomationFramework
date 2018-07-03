@@ -68,5 +68,12 @@ public class ConfigFileReader {
 		String windowSize = properties.getProperty("windowMaximize");
 		if(windowSize != null) return Boolean.valueOf(windowSize);
 		return true;
-	} 
+	}
+	
+	public String getTestDataResourcePath(){
+		String testDataResourcePath = properties.getProperty("testDataResourcePath");
+		if(testDataResourcePath!= null) return testDataResourcePath;
+		else throw new RuntimeException("Test Data Resource Path not specified in the Configuration.properties file for the Key:testDataResourcePath");		
+	}
+	
 }
