@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="51580" started-at="2018-07-03T20:14:01Z" finished-at="2018-07-03T20:14:53Z">
+  <suite name="Default suite" duration-ms="53018" started-at="2018-07-10T20:09:50Z" finished-at="2018-07-10T20:10:43Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner@1a968a59]" name="feature" class="runners.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="51580" started-at="2018-07-03T20:14:01Z" finished-at="2018-07-03T20:14:53Z">
+    <test name="Default test" duration-ms="53018" started-at="2018-07-10T20:09:50Z" finished-at="2018-07-10T20:10:43Z">
       <class name="runners.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner@1a968a59]" name="setUpClass" is-config="true" duration-ms="517" started-at="2018-07-03T20:14:01Z" finished-at="2018-07-03T20:14:02Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner@1a968a59]" name="setUpClass" is-config="true" duration-ms="375" started-at="2018-07-10T20:09:50Z" finished-at="2018-07-10T20:09:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner@1a968a59]" name="feature" duration-ms="50826" started-at="2018-07-03T20:14:02Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-03T20:14:53Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.TestRunner@1a968a59]" name="feature" duration-ms="52505" started-at="2018-07-10T20:09:50Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-07-10T20:10:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Autometed End2End Tests]]>
+                <![CDATA[Automated End2End Tests]]>
               </value>
             </param>
           </params>
@@ -57,20 +57,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Caused by: java.util.NoSuchElementException: No value present
 at java.util.Optional.get(Unknown Source)
-at dataProviders.JsonDataReader.getCustomerByName(JsonDataReader.java:36)
-at stepDefinitions.CheckoutPageSteps.enter_personal_details_on_checkout_page(CheckoutPageSteps.java:21)
-at ✽.And enter "<customer>" personal details on checkout page(End2End_Test.feature:9)
+at stepDefinitions.ConfirmationPageSteps.verify_the_order_details(ConfirmationPageSteps.java:21)
+at ✽.Then verify the order details(End2End_Test.feature:13)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@1a968a59]" name="tearDownClass" is-config="true" duration-ms="18" started-at="2018-07-03T20:14:53Z" finished-at="2018-07-03T20:14:53Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@1a968a59]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2018-07-10T20:10:43Z" finished-at="2018-07-10T20:10:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runners.TestRunner -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
